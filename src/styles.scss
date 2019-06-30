@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+@import './styles/theming.scss';
+
+@include mat-core();
+@include angular-material-theme($theme);
+
+// Reset elements
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}

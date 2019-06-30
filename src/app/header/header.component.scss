@@ -1,0 +1,10 @@
+@import '../../styles/theming.scss';
+
+.header {
+  padding: 40px 20px;
+  box-shadow: 1px 1px 12px #9a9898;
+  background-color: mat-color($background, app-bar);
+  font-size: 2em;
+  color: mat-color($foreground, text);
+  text-align: center;
+}

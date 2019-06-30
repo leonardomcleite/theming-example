@@ -1,0 +1,24 @@
+@import '../../styles/theming.scss';
+
+@mixin box($backgroundColor) {
+  .box {
+    padding: 20px;
+    margin: 20px;
+    background-color: $backgroundColor;
+    border-bottom: 1px solid #e3e3e3;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6em;
+    color: if($isDark, #ffffff, #000000);
+    border: 1px solid if($isDark, #ffffff, #000000)
+  }
+}
+
+$isDark: false;
+
+@if($isDark) {
+  @include box(#000000);
+} @else {
+  @include box(#ffffff);
+}
