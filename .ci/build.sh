@@ -6,7 +6,7 @@ function reset() {
     echo "# Removendo imagens anteriores..."
     echo
 
-    if [[ "$HOSTNAME" == "servidor-theming-example" ]]; then
+    if [[ "$HOSTNAME" == "servidor-all-knowledge" ]]; then
         cd ~/projetos/theming-example
     else
         cd ~/Projetos/Pessoal/theming-example
